@@ -14,6 +14,25 @@ config/name="RL Agents Autotrain"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_rl_agents/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "orange",
+"res://autoloads/": "red",
+"res://resources/": "teal",
+"res://scenes/": "blue",
+"res://scenes/_debug": "purple"
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -21,18 +40,3 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="forward_plus"
-
-[file_customization]
-folder_colors={
-"res://assets/": "orange",
-"res://autoloads/": "red",
-"res://resources/": "teal",
-"res://scenes/": "blue",
-"res://scenes/_debug": "purple",
-}
-
-[display]
-
-window/size/viewport_width=1280
-window/size/viewport_height=720
